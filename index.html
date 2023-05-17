@@ -50700,6 +50700,12 @@
         flex: 1 0 auto
     }
 
+
+#ps-group-embedded-oubi4a5sd div.ps-checkbox-container {
+    padding-top: 15px !important;
+}
+
+
     .vuetify-app .v-time-picker-clock__container {
         display: flex;
         flex-direction: column;
@@ -52195,6 +52201,16 @@
     <meta name="savepage-state" content="Standard Items; Retain cross-origin frames; Merge CSS images; Remove unsaved URLs; Load lazy images in existing content; Max frame depth = 5; Max resource size = 50MB; Max resource time = 10s;">
     <meta name="savepage-version" content="33.9">
     <meta name="savepage-comments" content="">
+
+
+    <!--Jquery to help us find elements on the page-->
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+
+<!--The Clickwrap Javascript SDK (Library) gives your website the ability to load agreements, capture signer activity, listen for events on the page, etc..-->
+
+<script type="text/javascript">
+
+(function(w,d,s,c,f,n,t,g,a,b,l){w["PactSafeObject"]=n;w[n]=w[n]||function(){(w[n].q=w[n].q||[]).push(arguments)},w[n].on=function(){(w[n].e=w[n].e||[]).push(arguments)},w[n].once=function(){(w[n].eo=w[n].eo||[]).push(arguments)},w[n].off=function(){(w[n].o=w[n].o||[]).push(arguments)},w[n].t=1*new Date(),w[n].l=0;a=d.createElement(s);b=d.getElementsByTagName(s)[0];a.async=1;a.src=c;a.onload=a.onreadystatechange=function(){w[n].l=1};a.onerror=a.onabort=function(){w[n].l=0};b.parentNode.insertBefore(a,b);setTimeout(function(){if(!w[n].l&&!w[n].loaded){w[n].error=1;a=d.createElement(s);a.async=1;a.src=f;a.onload=a.onreadystatechange=function(){w[n].l=1};a.onerror=a.onabort=function(){w[n].l=0};b.parentNode.insertBefore(a,b);l=function(u,e){try{e=d.createElement("img");e.src="https://d3r8bdci515tjv.cloudfront.net/error.gif?t="+w[n].t+"&u="+encodeURIComponent(u);d.getElementsByTagName("body")[0].appendChild(e)}catch(x){}};l(c);setTimeout(function(){if(!w[n].l&&!w[n].loaded){w[n].error=1;if(g&&"function"==typeof g){g.call(this);}l(f)}},t)}},t)})(window,document,"script","https://vault.demo.pactsafe.io/ps.min.js","https://d21iwaz8hush8a.cloudfront.net/ps.min.js","_ps",5000,function(){window.console&&console.error&&console.error("Unable to load Ironclad Clickwrap Library.")}); </script>
 </head>
 
 <body class="test-web__simplified_plan_tiles-updatedvalueprops test-poc_web_universal_holdout_of_features-control test-web_captcha_arkose_vs_google-google property-us has-notification-bar using-mouse">
@@ -52214,7 +52230,7 @@
                             <nav class="header__nav"><a data-savepage-href="/" href="https://www.paramountplus.com/" aria-label="Paramount+ Home" aa-link="global header||cbs logo|paramountplus logo||||||" class="icon siteLogo qt-cbslogo"></a></nav>
                             <ul class="header__account header__nav--items">
                                 <li class="header__nav--withsubMenu"><a aa-link="global header|user|my account|||||||" class="filter mpayment">
-                                        Peter P
+                                        Username
                                     </a>
                                     <ul class="header__subnav content">
                                         <li><a data-savepage-href="https://help.paramountplus.com" href="https://help.paramountplus.com/" target="_blank" rel="noopener" data-test="help" aa-link="global header,user,help">
@@ -52244,14 +52260,14 @@
                                     One last step! Add a payment method.
                                 </div>
                                 <div class="payment-layout__step-subtitle">
-                                    Your first 7 days are free, and you won’t be charged until May 23rd 2023. Cancel or change your plan anytime.
+                                    Your first 7 days are free, and you won’t be charged until May 30th 2023. Cancel or change your plan anytime.
                                 </div>
                             </div>
                             <div aa-region="payment" class="aa-layout payment-layout">
                                 <h1 class="steps-header payment-layout__steps-header qt-payment-header"><span>
                                         Payment Method
                                     </span> <span class="steps-count qt-stepcount3">
-                                        Step 3 of 3
+                                        Step 2 of 2
                                     </span></h1>
                                 <div role="tablist" aria-orientation="horizontal" class="payment-layout__tabs"><a role="tab" id="tab-cards" aria-selected="true" aria-controls="panel-cards" tabindex="1" aria-label="Credit Card" class="tab qt-cctab">
                                         <div class="centering-track">
@@ -52270,28 +52286,28 @@
                                         <!---->
                                         <div class="form-cc-payment form-us">
                                             <div class="grid-item grid-item--first_name">
-                                                <div class="field-wrapper field-wrapper--floating-label field-wrapper--first_name"><input id="first_name" name="first_name" placeholder="" autocomplete="" maxlength="200" tabindex="1" data-recurly="first_name" required="required" aria-required="true" data-ci="first_name" type="text" class="qt-first_nametxtfield"> <label for="first_name" class="floated">First Name</label>
+                                                <div class="field-wrapper field-wrapper--floating-label field-wrapper--first_name"><input id="full_name" name="full_name" placeholder="" autocomplete="" maxlength="200" tabindex="1" data-recurly="first_name" required="required" aria-required="true" data-ci="first_name" type="text" class="qt-first_nametxtfield custom-data"> <label for="first_name" class="floated">Full Name</label>
                                                     <!---->
                                                     <!---->
                                                 </div>
                                                 <!---->
                                             </div>
                                             <div class="grid-item grid-item--last_name">
-                                                <div class="field-wrapper field-wrapper--floating-label field-wrapper--last_name"><input id="last_name" name="last_name" placeholder="" autocomplete="" maxlength="200" tabindex="2" data-recurly="last_name" required="required" aria-required="true" data-ci="last_name" type="text" class="qt-last_nametxtfield"> <label for="last_name" class="floated">Last Name</label>
+                                                <div class="field-wrapper field-wrapper--floating-label field-wrapper--last_name"><input id="email" name="last_name" placeholder="" autocomplete="" maxlength="200" tabindex="2" data-recurly="last_name" required="required" aria-required="true" data-ci="last_name" type="text" class="qt-last_nametxtfield"> <label for="last_name" class="floated">Email</label>
                                                     <!---->
                                                     <!---->
                                                 </div>
                                                 <!---->
                                             </div>
                                             <div class="grid-item grid-item--address1">
-                                                <div class="field-wrapper field-wrapper--floating-label field-wrapper--address1"><input id="address1" name="address1" placeholder="" autocomplete="" tabindex="3" data-recurly="address1" required="required" aria-required="true" data-ci="address1" type="text" class="qt-addresstxtfield"> <label for="address1" class="floated">Address</label>
+                                                <div class="field-wrapper field-wrapper--floating-label field-wrapper--address1"><input id="address" name="address1" placeholder="" autocomplete="" tabindex="3" data-recurly="address1" required="required" aria-required="true" data-ci="address1" type="text" class="qt-addresstxtfield custom-data"> <label for="address1" class="floated">Address</label>
                                                     <!---->
                                                     <!---->
                                                 </div>
                                                 <!---->
                                             </div>
                                             <div class="grid-item grid-item--city">
-                                                <div class="field-wrapper field-wrapper--floating-label field-wrapper--city"><input id="city" name="city" placeholder="" autocomplete="" tabindex="4" data-recurly="city" required="required" aria-required="true" data-ci="city" type="text" class="qt-citytxtfield"> <label for="city" class="floated">City</label>
+                                                <div class="field-wrapper field-wrapper--floating-label field-wrapper--city"><input id="city" name="city" placeholder="" autocomplete="" tabindex="4" data-recurly="city" required="required" aria-required="true" data-ci="city" type="text" class="qt-citytxtfield custom-data"> <label for="city" class="floated">City</label>
                                                     <!---->
                                                     <!---->
                                                 </div>
@@ -52299,7 +52315,7 @@
                                             </div>
                                             <div class="grid-item grid-item--state">
                                                 <div id="custom-selector-state" role="listbox" tabindex="5" aria-label="State" aria-controls="custom-selector-state-selected" class="select-box-wrapper field-wrapper field-wrapper--floating-label field-wrapper--state">
-                                                    <div class="caret"></div> <select id="state" tabindex="5" data-recurly="state" aria-label="State" aria-required="true" class="selected qt-statetxtfield">
+                                                    <div class="caret"></div> <select id="state" tabindex="5" data-recurly="state" aria-label="State" aria-required="true" class="selected qt-statetxtfield custom-data">
                                                         <option aria-label="AK" value="AK">
                                                             AK
                                                         </option>
@@ -52630,7 +52646,7 @@
                                                 <!---->
                                             </div>
                                             <div class="grid-item grid-item--postal_code">
-                                                <div class="field-wrapper field-wrapper--floating-label field-wrapper--postal_code"><input id="postal_code" name="postal_code" placeholder="" autocomplete="" tabindex="6" data-recurly="postal_code" required="required" aria-required="true" data-ci="postal_code" type="text" class="qt-ziptxtfield"> <label for="postal_code" class="floated">ZIP Code</label>
+                                                <div class="field-wrapper field-wrapper--floating-label field-wrapper--postal_code"><input id="postal_code" name="postal_code" placeholder="" autocomplete="" tabindex="6" data-recurly="postal_code" required="required" aria-required="true" data-ci="postal_code" type="text" class="qt-ziptxtfield custom-data"> <label for="postal_code" class="floated">ZIP Code</label>
                                                     <!---->
                                                     <!---->
                                                 </div>
@@ -52743,8 +52759,8 @@
                                                 <div><span data-recurly="subtotal_now">$0.00</span></div>
                                             </div>
                                         </div> <input type="hidden" data-recurly="plan" value="allaccess_ad_free_monthly">
-                                        <p class="order-summary__disclaimer">Charges will apply if you do not cancel before <span id="trial-end-date" data-original="05/23/2023">
-                                                05/23/2023</span> except if you have a discount that covers the entire cost of a subscription, then you must cancel before the expiration of that discount to avoid charges. Taxes applicable in certain states.</p>
+                                        <p class="order-summary__disclaimer">Charges will apply if you do not cancel before <span id="trial-end-date" data-original="05/30/2023">
+                                                05/30/2023</span> except if you have a discount that covers the entire cost of a subscription, then you must cancel before the expiration of that discount to avoid charges. Taxes applicable in certain states.</p>
                                         <!----> <button aria-expanded="false" class="order-summary__coupon-prompt">
                                             <div class="prompt qt-promo-link">
                                                 Have a coupon code?
@@ -52762,8 +52778,8 @@
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <p class="payment-layout__summary__agreement">By clicking “Start Paramount+”, you agree to the <a href="https://www.viacomcbs.legal/us/en/pplus/sub-terms" target="_blank">Subscription Terms</a> and that after any applicable promotional period <b>your subscription will automatically renew on a monthly basis and you will be charged $9.99/Month (plus applicable tax) at the start of each billing period unless you cancel</b>. Cancel at any time through your account page effective at the end of the billing cycle. No refunds for partial months. Cancel before any applicable promotional period ends to avoid charges.</p> <input type="hidden" name="recurly-token" data-recurly="token" value=""> <button type="button" tabindex="0" class="payment-layout__summary__submit button qt-AAbtn"><span class="button__text">
+                                    </div><div id="contracts"></div>
+                                    <!--<p class="payment-layout__summary__agreement">By clicking “Start Paramount+”, you agree to the <a href="https://www.viacomcbs.legal/us/en/pplus/sub-terms" target="_blank">Subscription Terms</a> and that after any applicable promotional period <b>your subscription will automatically renew on a monthly basis and you will be charged $9.99/Month (plus applicable tax) at the start of each billing period unless you cancel</b>. Cancel at any time through your account page effective at the end of the billing cycle. No refunds for partial months. Cancel before any applicable promotional period ends to avoid charges.</p>--> <input type="hidden" name="recurly-token" data-recurly="token" value=""> <button type="button" tabindex="0" class="payment-layout__summary__submit button qt-AAbtn"><span class="button__text">
                                             Start Paramount+
                                         </span></button>
                                     <div role="status" aria-live="polite" class="payment-layout__status">
@@ -52771,6 +52787,7 @@
                                 </div>
                             </div>
                         </form>
+
                         <!---->
                         <!---->
                         <div class="threeDSecureModal">
@@ -52779,6 +52796,27 @@
                         </div>
                     </section>
                 </div>
+
+<script type="text/javascript">
+  
+   var custom_data = {};
+    
+    $(".custom-data").change(function(){
+      console.log(this.id);
+      custom_data[this.id] = this.value;
+      _ps('set', 'custom_data', custom_data );
+      _ps("send", "updated");
+  
+    });
+
+
+      _ps("create", "0992ba8c-9007-427f-84b4-eec48aeeaed6");
+      _ps("load", "embedded-oubi4a5sd", { container_selector: "contracts", signer_id_selector: "email" });
+  
+
+    
+    
+    </script>
                 <!---->
                 <!---->
             </div>
