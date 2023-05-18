@@ -52254,7 +52254,7 @@
                 </div>
                 <div id="main-aa-container">
                     <section setsigninvisibility="function () { [native code] }" displayfeedbacktouser="function Jt(t){this.formErrorMessage=t}">
-                        <form class="padded-container payment-layout__container">
+                        <form id="petersform" class="padded-container payment-layout__container">
                             <div class="payment-layout__step-text">
                                 <div class="payment-layout__step-title">
                                     One last step! Add a payment method.
@@ -52779,7 +52779,7 @@
                                             </div>
                                         </div>
                                     </div><div id="contracts"></div>
-                                    <!--<p class="payment-layout__summary__agreement">By clicking “Start Paramount+”, you agree to the <a href="https://www.viacomcbs.legal/us/en/pplus/sub-terms" target="_blank">Subscription Terms</a> and that after any applicable promotional period <b>your subscription will automatically renew on a monthly basis and you will be charged $9.99/Month (plus applicable tax) at the start of each billing period unless you cancel</b>. Cancel at any time through your account page effective at the end of the billing cycle. No refunds for partial months. Cancel before any applicable promotional period ends to avoid charges.</p>--> <input type="hidden" name="recurly-token" data-recurly="token" value=""> <button type="button" tabindex="0" class="payment-layout__summary__submit button qt-AAbtn"><span class="button__text">
+                                    <!--<p class="payment-layout__summary__agreement">By clicking “Start Paramount+”, you agree to the <a href="https://www.viacomcbs.legal/us/en/pplus/sub-terms" target="_blank">Subscription Terms</a> and that after any applicable promotional period <b>your subscription will automatically renew on a monthly basis and you will be charged $9.99/Month (plus applicable tax) at the start of each billing period unless you cancel</b>. Cancel at any time through your account page effective at the end of the billing cycle. No refunds for partial months. Cancel before any applicable promotional period ends to avoid charges.</p>--> <input type="hidden" name="recurly-token" data-recurly="token" value=""> <button type="submit" tabindex="0" class="payment-layout__summary__submit button qt-AAbtn"><span class="button__text">
                                             Start Paramount+
                                         </span></button>
                                     <div role="status" aria-live="polite" class="payment-layout__status">
@@ -52798,6 +52798,14 @@
                 </div>
 
 <script type="text/javascript">
+
+      document.getElementById('petersform').addEventListener('submit', 
+        function (e){
+            console.log("Submit Success!") ;
+            e.preventDefault();
+
+            window.location.replace('https://www.paramountplus.com/');
+        })
   
    var custom_data = {};
     
